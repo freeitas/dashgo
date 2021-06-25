@@ -3,6 +3,7 @@ import { Box, Flex, Button, Heading, Icon, Table, Thead, Tr, Th, Checkbox, Tbody
 import { Header } from "../../components/Header";
 import { Sidebar } from "../../components/Sidebar";
 import { RiAddLine, RiPencilLine } from "react-icons/ri";
+import { Pagination } from "../../components/Pagination";
 
 export default function UserList() {
 	return (
@@ -56,7 +57,7 @@ export default function UserList() {
 										size="sm"
 										fontSize="sm"
 										colorScheme="purple"
-										leftIcon={<Icon as={RiPencilLine} fontSize="16"/>}
+										leftIcon={<Icon as={RiPencilLine} fontSize="16" />}
 									>
 										Editar
 									</Button>
@@ -64,6 +65,8 @@ export default function UserList() {
 							</Tr>
 						</Tbody>
 					</Table>
+
+					<Pagination />
 				</Box>
 			</Flex>
 		</Box>
