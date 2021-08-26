@@ -34,7 +34,7 @@ export default function Home() {
           <Input name="password" type="password" label="Senha" error={errors.password} {...register('password')} />
         </Stack>
 
-        <Button type="submit" mt="6" colorScheme="pink" size="lg" isLoading={formState.isSubmitting}>Entrar</Button>
+        <Button type="submit" mt="6" colorScheme="pink" size="lg" isLoading={formState.isSubmitting}>Entrar!</Button>
       </Flex>
     </Flex>
   )
